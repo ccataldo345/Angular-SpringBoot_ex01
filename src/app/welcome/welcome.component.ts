@@ -8,15 +8,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class WelcomeComponent implements OnInit {
 
-  message = 'Welcome message'
-  name = ""
+  message = 'Welcome message';
+  name = '';
 
-  constructor(private route:ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    console.log(this.message)
-    //console.log(this.route.snapshot.params["name"])
-    this.name = this.route.snapshot.params["name"]
+    console.log(this.message);
+    // console.log(this.route.snapshot.params["name"])
+    this.name = this.route.snapshot.params['name'];
 
   }
 
