@@ -42,15 +42,15 @@ public class TodoResource {
 		return new ResponseEntity<Todo>(todo, HttpStatus.OK);
 	}
 
-	@PostMapping("/users/{username}/todos/{id}")
+	@PostMapping("/users/{username}/todos")
 	public ResponseEntity<Void> updateTodo(
 			@PathVariable String username, @RequestBody Todo todo) {
-		Todo todoUpdated = todoHardCodedService.save(todo);
+		Todo createdTodo = todoHardCodedService.save(todo);
 
-		URI uri ServletUriComponentsBuilder.fromCurrentRequest()
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
 				.path("/{id}").buildAndExpand(createdTodo.getId()).toUri();
 
-		return new ResponseEntity.created(uri).build();
+		return ResponseEntity.created(uri).build();
 	}
 
 }
