@@ -8,17 +8,12 @@
 		<version>2.1.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.chris.rest.webservices</groupId>
 	<artifactId>restful-web-services</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>restful-web-services</name>
 	<description>Demo project for Spring Boot</description>
-	
-	<modules>
-        <module>Frontend</module>
-        <module>Backend</module>
-    </modules>
-
+		
 	<properties>
 		<java.version>1.8</java.version>
 		<main.basedir>${project.basedir}</main.basedir>
@@ -55,7 +50,7 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>Backend/src/main/resources</directory>
+				<directory>Backend/src/main/java/com/chris/rest/webservices/restfulwebservices</directory>
 			</resource>
 		</resources>
 		
@@ -63,15 +58,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>3.0.1</version>
-				
-				<executions>
-                    <execution>
-                        <id>copy-dependencies</id>
-                        <phase>package</phase>
-                        <goals><goal>copy-dependencies</goal></goals>
-                    </execution>
-                </executions>
+				<version>2.1.6.RELEASE</version>
 			</plugin>
 		</plugins>
 	</build>
