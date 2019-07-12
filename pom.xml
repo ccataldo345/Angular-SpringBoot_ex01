@@ -21,8 +21,6 @@
 	
 	<properties>
 		<java.version>1.8</java.version>
-		<main.basedir>${project.basedir}</main.basedir>
-		<start-class>com.chris.rest.webservices</start-class>
 	</properties>
 
 	<dependencies>
@@ -55,7 +53,7 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>Backend/src/main/java/com/chris/rest/webservices/restfulwebservices</directory>
+				<directory>Backend/src/</directory>
 			</resource>
 		</resources>
 		

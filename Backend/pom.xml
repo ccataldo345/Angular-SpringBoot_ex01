@@ -16,8 +16,6 @@
 		
 	<properties>
 		<java.version>1.8</java.version>
-		<main.basedir>${project.basedir}</main.basedir>
-		<start-class>com.chris.rest.webservices</start-class>
 	</properties>
 
 	<dependencies>
@@ -48,12 +46,6 @@
 	</dependencies>
 
 	<build>
-		<resources>
-			<resource>
-				<directory>Backend/src/main/java/com/chris/rest/webservices/restfulwebservices</directory>
-			</resource>
-		</resources>
-		
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
