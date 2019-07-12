@@ -13,9 +13,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>restful-web-services</name>
 	<description>Demo project for Spring Boot</description>
+	
+	<modules>
+        <module>Frontend</module>
+        <module>Backend</module>
+    </modules>
 
 	<properties>
 		<java.version>1.8</java.version>
+		<main.basedir>${project.basedir}</main.basedir>
 		<start-class>com.chris.rest.webservices</start-class>
 	</properties>
 
