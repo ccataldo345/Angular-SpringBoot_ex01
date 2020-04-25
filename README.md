@@ -1,14 +1,20 @@
-# Angular-SpringBoot_ex01
+# Angular-SpringBoot_ex01  
+
 Angular + Spring Boot exercise; todo list web app
+
+- requirements:
+
+	nodejs, npm, ng
 
 - run Spring Boot with Maven:
 
 	cd Backend && mvn spring-boot:run
+	(or ./mvnw spring-boot:run)
 
-	localhost:4200
+	(localhost:8080)
 
 - run Angular:
 
-	cd Frontend && ng serve
+	cd Frontend && npm install && ng serve
 
-	localhost:8080
+	browse localhost:4200
